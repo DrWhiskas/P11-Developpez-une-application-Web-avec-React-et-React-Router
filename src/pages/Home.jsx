@@ -8,8 +8,8 @@ import Footer from '../components/Footer'
     return (
         <>
            <Header />
-           <Footer />
            <Banner />
+           <Footer />
         </>
     )
  }
