@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import BannerBackground from '../assets/BannerBackground.png'
 import '../style/banner.css'
 
-export default function Banner(){
+export default function Banner(){ // Rajoute des 2 arguments "img, text" pour pouvoir reutiliser pour les autres pages
     return (
         <div className='banner'>
             <div className='banner__content'>
