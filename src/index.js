@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home'
+import LocalisationDetails from './pages/LogementDetails';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -12,7 +13,7 @@ root.render(
 		<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					
+					<Route path='/localisation:Id' elemnt = {<LocalisationDetails />} />
 				</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
