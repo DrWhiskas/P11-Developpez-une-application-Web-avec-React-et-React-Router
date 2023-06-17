@@ -14,7 +14,7 @@ export default function Header(){
                 <Link className='header__nav__link'>
                     Accueil
                 </Link>
-                <Link className='header__nav__link'>
+                <Link to='/propos'className='header__nav__link'>
                     A Propos
                 </Link>
             </div>
