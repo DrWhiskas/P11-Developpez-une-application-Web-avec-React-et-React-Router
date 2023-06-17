@@ -11,7 +11,7 @@ export default function Header(){
                 <img src={logo} alt='Logo du site Kasa' className='header__logo' />
             </Link>
             <div className='header__nav'>
-                <Link className='header__nav__link'>
+                <Link to='/' className='header__nav__link'>
                     Accueil
                 </Link>
                 <Link to='/propos'className='header__nav__link'>
