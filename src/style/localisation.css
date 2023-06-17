@@ -1,0 +1,42 @@
+.localisation{
+    height: auto;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: center;
+;
+}
+.localisation__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1240px;
+    height: auto;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #F7F7F7;;
+}
+.localisation__card{
+    color: red;
+    height: 340px;
+    width: 340px;
+    margin: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.localisation__card__title{
+    color: red;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* or 26px */
+
+    color: #FFFFFF;
+}
+.localisation__card__cover{
+    color: red;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

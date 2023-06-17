@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    height: 50px;
+}
+.header__nav{
+    color: red;
+}
+.header__nav__link{
+    margin-left: 70px;
+    text-decoration : none;
+    color: #FD6868;
+}
