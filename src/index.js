@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home'
 import LocalisationDetails from './pages/LogementDetails';
-import Propos from './pages/Propos'
+import About from './pages/About'
 import reportWebVitals from './reportWebVitals';
 
 
@@ -13,8 +13,8 @@ root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={ <Home />} />
-				<Route path='/propos' element={ <Propos />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/About" element={<About />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>

@@ -23,16 +23,10 @@
     overflow: hidden;
 }
 .localisation__card__title{
-    color: red;
     position: absolute;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 142.6%;
-    /* or 26px */
-
     color: #FFFFFF;
+    margin-top: 300px ;
+    margin-left: 22px;
 }
 .localisation__card__cover{
     color: red;
