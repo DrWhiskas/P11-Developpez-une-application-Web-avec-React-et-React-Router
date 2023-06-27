@@ -1,0 +1,11 @@
+.carousel{
+    display: flex;
+}
+.carousel__button{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+.right{
+    right: 20%;
+}
