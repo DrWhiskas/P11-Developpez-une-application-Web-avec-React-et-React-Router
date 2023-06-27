@@ -3,6 +3,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin: 1% 5%;
 }
 .header__logo{
     height: 50px;

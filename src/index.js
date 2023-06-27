@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/Home'
-import LocalisationDetails from './pages/LogementDetails';
+import Logements from './pages/Logements';
 import About from './pages/About'
 import reportWebVitals from './reportWebVitals';
 
@@ -15,7 +15,7 @@ root.render(
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/About" element={<About />} />
-				<Route path="/localisation:Id" element={<LocalisationDetails />} />
+				<Route path="/localisation/:id" element={<Logements />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>

@@ -3,12 +3,13 @@
     padding: 5% 0%;
     display: flex;
     justify-content: center;
+    margin: 0 5%
 ;
 }
 .localisation__container {
     display: flex;
     flex-wrap: wrap;
-    width: 1240px;
+    width: 100%;
     height: auto;
     justify-content: center;
     border-radius: 25px;
@@ -16,8 +17,8 @@
 }
 .localisation__card{
     color: red;
-    height: 340px;
-    width: 340px;
+    height: 550px;
+    width: 550px;
     margin: 1%;
     border-radius: 10px;
     overflow: hidden;
