@@ -1,11 +1,36 @@
 .carousel{
     display: flex;
+    justify-content: center;
+    margin: 0% 5%;
+    height: 540px;
+    overflow: hidden;
 }
 .carousel__button{
     display: flex;
     justify-content: space-between;
     background: none;
+    border: none;
+    position: absolute;
+
+}
+
+.carousel__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.left{
+    left: 5%;
 }
 .right{
-    right: 20%;
+    right: 5%;
+}
+.carousel__button__arrow{
+    width: 96px;
+    height: 119px;
+}
+.carousel__button__content{
+    display: flex;
+    align-items: center;
+
 }

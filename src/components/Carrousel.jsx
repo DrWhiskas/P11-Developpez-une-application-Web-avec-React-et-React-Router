@@ -26,18 +26,16 @@ export default function Carrousel(){
     }
     return(
     <div className="carousel">
-        <button className='carousel__button ' onClick={previousSlide}>
-            <img src={ previousButton } />
+        <div className="carousel__button__content">
+        <button className='carousel__button left' onClick={previousSlide}>
+            <img className='carousel__button__arrow' src={ previousButton } />
         </button>
-        <img src={logement.pictures[currentIndex]} alt="photo du logemment" />
         <button className='carousel__button right' onClick={nextSlide}>
-            <img src={ nextButton } />
+            <img className='carousel__button__arrow' src={ nextButton } />
         </button>
+        </div>
+        <img src={logement.pictures[currentIndex]} className='carousel__img'  alt="photo du logemment" />
+        
     </div>
     )
 }
-/**
- * {logement.pictures.map((item, index) => (
-            <img key={index} src={item} alt="photo du logement" />
-        ))}
- */
