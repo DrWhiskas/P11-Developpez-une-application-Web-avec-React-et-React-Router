@@ -1,25 +1,37 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data/data.json";
-import { useState } from "react"
+import redStar from '../assets/redStar.png'
+import grayStar from '../assets/star.png'
+import style from '../style/rating.css'
 
 export default function Rating(){
     const { id } = useParams()
-    const rating = data.find((rating) => rating.id == id)
-    const [ currentIndex, setCurrentIndex] = useState(0)
+    const rate = data.find((rating) => rating.id === id)
 
-    const currentRating  = rating.rating
+   function setStars() {
+    const stars = [];
+    const totalStars = 5;
+    const filledStars = rate.rating;
 
-
-    console.log(currentRating);
-
-    function setStars(ratings, isRatings){
-        
+    for (let i = 1; i <= totalStars; i++) {
+      const starImg = i <= filledStars ? <img key={i} src={redStar} alt="red stars" /> : <img key={i} src={grayStar} alt="gray stars" />;
+      stars.push(starImg);
     }
 
+    return stars;
+}
+
+    const star = setStars()
+
     return(
-        <div className="informations">
-           
+        <div className="rating">
+            <div className="rating__content">
+                {star.map((star, index) =>
+                    [star]
+                )}
+
+            </div>
         </div>
     )
 }

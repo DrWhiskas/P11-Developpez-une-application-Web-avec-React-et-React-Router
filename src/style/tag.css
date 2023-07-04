@@ -1,0 +1,16 @@
+.tags{
+    display: flex;
+    margin: 0 5%;
+}
+.tags__item{
+    display: flex;
+    width: auto;
+    height: 25px;
+    background-color: #FF6060;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    border-radius: 13px;
+    padding: 0 20px;
+}

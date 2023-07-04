@@ -3,6 +3,7 @@ import ArrowDown from '../assets/ArrowDown.png'
 import ArrowUp from '../assets/ArrowUp.png'
 import style from '../style/dropdown.css'
 
+
 export default function Dropdown ({titles, descriptions}){
     const [open, setOpen] = useState(false)
 
@@ -22,9 +23,9 @@ export default function Dropdown ({titles, descriptions}){
             </div>
             {open && (
                 <div className='dropdown__content'>
-                        <p className='dropdown__content__item'>
+                        <div className='dropdown__content__item'>
                             {descriptions}   
-                        </p>
+                        </div>
                 </div>
             )
             }

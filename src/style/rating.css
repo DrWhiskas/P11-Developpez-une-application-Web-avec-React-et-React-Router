@@ -1,0 +1,9 @@
+.rating{
+    margin: 0 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.rating__content{
+    display: flex;
+    align-items: center;
+}

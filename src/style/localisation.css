@@ -26,8 +26,9 @@
 .localisation__card__title{
     position: absolute;
     color: #FFFFFF;
-    margin-top: 300px ;
+    margin-top: 345px ;
     margin-left: 22px;
+    width: 155px;
 }
 .localisation__card__cover{
     color: red;

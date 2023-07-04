@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data/data.json";
 import { useState } from "react"
+import style from '../style/information.css'
+
 
 export default function Informations(){
     const { id } = useParams()
@@ -17,8 +19,8 @@ export default function Informations(){
                 <h4 className="informations__localisation__region">{informations.location}</h4>
             </div>
             <div className="informations__host">
-                <span className="information__host__name">{informations.host.name}</span>
-                <img className="information__host__picture" src={informations.host.picture} alt="picture of host" />
+                <span className="informations__host__name">{informations.host.name}</span>
+                <img className="informations__host__picture" src={informations.host.picture} alt="picture of host" />
             </div>
         </div>
     )
