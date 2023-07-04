@@ -7,7 +7,7 @@ import style from '../style/information.css'
 
 export default function Informations(){
     const { id } = useParams()
-    const informations = data.find((informations) => informations.id == id)
+    const informations = data.find((informations) => informations.id === id)
 
     const [ currentIndex, setCurrentIndex] = useState(0)
     console.log(informations.host.name);

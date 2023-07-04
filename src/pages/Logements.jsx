@@ -6,6 +6,7 @@ import Informations from "../components/Informations";
 import Footer from "../components/Footer";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
+import Error from "./Error";
 import { useParams } from "react-router-dom";
 
 import data from '../data/data.json';
@@ -16,7 +17,10 @@ export default function Logements() {
   const { id } = useParams();
   const newdata = data.find((newdata) => newdata.id === id);
 
-  console.log(newdata.equipments);
+  if(!newdata){
+    return <Error />
+  }
+
   
   return (
     <>
@@ -27,7 +31,7 @@ export default function Logements() {
         <Tag />
         <Rating />
       </div>
-      
+      <div>
       <Dropdown titles='Description' descriptions={newdata.description} />
       <Dropdown titles='Equippements' descriptions={
         <>
@@ -38,6 +42,7 @@ export default function Logements() {
           </ul>
         </>
       } />
+      </div>
       <Footer />      
     </>
   );

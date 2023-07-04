@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Home from './pages/Home'
 import Logements from './pages/Logements';
 import About from './pages/About'
+import Error from './pages/Error';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -16,6 +17,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/About" element={<About />} />
 				<Route path="/localisation/:id" element={<Logements />} />
+				<Route path='*' element={<Error />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>

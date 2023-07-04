@@ -29,6 +29,7 @@
 }
 .dropdown__btn__arrow{
     height: 13px;
+    margin: 0 14px 0px 73px;
 }
 .dropdown__content{
     height: auto;

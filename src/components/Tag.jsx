@@ -5,7 +5,7 @@ import style from '../style/tag.css'
 
 export default function Tag(){
     const { id } = useParams()
-    const tag = data.find((tag) => tag.id == id)
+    const tag = data.find((tag) => tag.id === id)
 
     return(
         <div className="tags">
