@@ -1,9 +1,8 @@
 .localisation{
     height: auto;
-    padding: 5% 0%;
     display: flex;
     justify-content: center;
-    margin: 0 5%
+    margin: 5%;
 ;
 }
 .localisation__container {
@@ -13,7 +12,8 @@
     height: auto;
     justify-content: center;
     border-radius: 25px;
-    background-color: #F7F7F7;;
+    background-color: #F6F6F6;;
+    padding: 4%;
 }
 .localisation__card{
     color: red;

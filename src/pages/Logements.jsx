@@ -10,6 +10,8 @@ import { useParams } from "react-router-dom";
 
 import data from '../data/data.json';
 
+import ratingTag from '../style/page/rating-tag.css'
+
 export default function Logements() {
   const { id } = useParams();
   const newdata = data.find((newdata) => newdata.id === id);
@@ -21,8 +23,11 @@ export default function Logements() {
       <Header />
       <Carrousel />
       <Informations />
-      <Rating />
-      <Tag />
+      <div className="rating-tag">
+        <Tag />
+        <Rating />
+      </div>
+      
       <Dropdown titles='Description' descriptions={newdata.description} />
       <Dropdown titles='Equippements' descriptions={
         <>
