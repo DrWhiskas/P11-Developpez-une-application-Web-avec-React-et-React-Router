@@ -1,0 +1,5 @@
+.logement__dropdown{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+

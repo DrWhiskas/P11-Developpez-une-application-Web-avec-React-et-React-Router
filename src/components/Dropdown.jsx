@@ -14,7 +14,7 @@ export default function Dropdown ({titles, descriptions}){
    
     return(
         <div className='dropdown'>
-            <div className='dropdown__btn' onClick={toggleDropdown}>
+            <div className='dropdown__btn w' onClick={toggleDropdown}>
                     <h2 className='dropdown__btn__title'>
                         {titles}
                     </h2> 
@@ -22,7 +22,7 @@ export default function Dropdown ({titles, descriptions}){
 
             </div>
             {open && (
-                <div className='dropdown__content'>
+                <div className='dropdown__content w'>
                         <div className='dropdown__content__item'>
                             {descriptions}   
                         </div>

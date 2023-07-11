@@ -11,7 +11,8 @@ import { useParams } from "react-router-dom";
 
 import data from '../data/data.json';
 
-import ratingTag from '../style/page/rating-tag.css'
+import ratingTagStyle from '../style/page/rating-tag.css'
+import logementStyle from '../style/logements.css'
 
 export default function Logements() {
   const { id } = useParams();
@@ -31,7 +32,7 @@ export default function Logements() {
         <Tag />
         <Rating />
       </div>
-      <div>
+      <div className="logement__dropdown">
       <Dropdown titles='Description' descriptions={newdata.description} />
       <Dropdown titles='Equippements' descriptions={
         <>

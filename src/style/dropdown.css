@@ -7,7 +7,7 @@
 }
 .dropdown__btn{
     background-color: #FF6060;
-    width: 48%;
+    width: 550px;
     height: 47px;
     border-radius: 5px;
     display: flex;
@@ -32,9 +32,9 @@
     margin: 0 14px 0px 73px;
 }
 .dropdown__content{
-    height: auto;
+    height: 249px;
     background-color: #F6F6F6;
-    width: 48%;
+    width: 550px;
 }
 .dropdown__content__item{
     padding: 1%;
@@ -44,4 +44,13 @@
     font-size: 24px;
     line-height: 142.6%;
     color: #FF6060;
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown__btn,
+  .dropdown__content
+   {
+    width: 100%;
+    max-width: 500px;
+  }
 }

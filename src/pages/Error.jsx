@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
+import style from '../style/page/error.css'
+
 export default function Error(){
     return(
         <>
@@ -16,7 +18,7 @@ export default function Error(){
                 Oups! La page que vous demandez n'existe pas.
             </div>
             <div className="error__footer">
-                <Link to='/'>
+                <Link to='/' className='error__footer__link'>
                     Retourner sur la page d'accueil
                 </Link>
             </div>
