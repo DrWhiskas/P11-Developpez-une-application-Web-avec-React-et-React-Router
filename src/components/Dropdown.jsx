@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import ArrowDown from '../assets/ArrowDown.png'
 import ArrowUp from '../assets/ArrowUp.png'
-import style from '../style/dropdown.css'
+import   '../style/dropdown.css'
 
 
 export default function Dropdown ({titles, descriptions}){
