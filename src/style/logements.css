@@ -3,3 +3,9 @@
     grid-template-columns: auto auto;
 }
 
+@media screen and (max-width: 992px) {
+    .logement__dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+}
