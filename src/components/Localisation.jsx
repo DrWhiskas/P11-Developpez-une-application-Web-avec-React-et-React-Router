@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import data from '../data/data.json';
 import '../style/localisation.css';
 
 export default function Localisation() {
-	/*
-  const [localisations, setLocalisations] = useState([]);
-  useEffect(() => {
-    setLocalisations(data);
-  }, []);
-*/
 	return (
 		<div className="localisation">
 			<div className="localisation__container">
