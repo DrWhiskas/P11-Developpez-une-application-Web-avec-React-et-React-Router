@@ -17,9 +17,19 @@ export default function Rating() {
 		for (let i = 1; i <= totalStars; i++) {
 			const starImg =
 				i <= filledStars ? (
-					<img key={i} src={redStar} alt="red stars" />
+					<img
+						key={i}
+						className="rating__content__item"
+						src={redStar}
+						alt="red stars"
+					/>
 				) : (
-					<img key={i} src={grayStar} alt="gray stars" />
+					<img
+						key={i}
+						className="rating__content__item"
+						src={grayStar}
+						alt="gray stars"
+					/>
 				);
 			stars.push(starImg);
 		}

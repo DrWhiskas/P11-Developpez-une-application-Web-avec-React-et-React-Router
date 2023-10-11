@@ -1,5 +1,7 @@
 .tags{
     display: flex;
+    position: relative;
+    top: 10px;
 }
 .tags__item{
     display: flex;
@@ -12,4 +14,8 @@
     border-radius: 13px;
     padding: 0 20px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+ 
 }

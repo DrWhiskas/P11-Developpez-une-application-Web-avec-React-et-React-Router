@@ -29,3 +29,31 @@
 .informations__host__content__picture{
     border-radius: 100%;
 }
+
+@media screen and (max-width: 767px) {
+    .informations{
+        display: flex;
+        flex-direction: column;
+        margin-inline-end: auto;
+
+    }
+    .informations__localisation__title{
+        font-size: 18px;
+    }
+    .informations__host{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .informations__host__content__picture{
+        width: 50%;
+    }
+    .informations__host__content__name{
+        font-size: 12px;
+    }
+    .informations__localisation{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -14%;
+    }
+}
