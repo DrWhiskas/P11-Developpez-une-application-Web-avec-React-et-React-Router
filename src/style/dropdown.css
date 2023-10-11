@@ -45,6 +45,9 @@
     line-height: 142.6%;
     color: #FF6060;
 }
+.dropdown__list{
+    list-style: none;
+}
 
 @media screen and (max-width: 1200px) {
   .dropdown__btn,

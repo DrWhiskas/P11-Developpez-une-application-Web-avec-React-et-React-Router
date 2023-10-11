@@ -24,27 +24,30 @@ export default function Logements() {
 
   
   return (
-    <>
-      <Header />
-      <Carrousel />
-      <Informations />
-      <div className="rating-tag">
-        <Tag />
-        <Rating />
-      </div>
-      <div className="logement__dropdown">
-      <Dropdown titles='Description' descriptions={newdata.description} />
-      <Dropdown titles='Equippements' descriptions={
-        <>
-          <ul>
-            {newdata.equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
-            ))}
-          </ul>
-        </>
-      } />
-      </div>
-      <Footer />      
-    </>
-  );
+		<>
+			<Header />
+			<Carrousel />
+			<Informations />
+			<div className="rating-tag">
+				<Tag />
+				<Rating />
+			</div>
+			<div className="logement__dropdown">
+				<Dropdown titles="Description" descriptions={newdata.description} />
+				<Dropdown
+					titles="Equippements"
+					descriptions={
+						<>
+							<ul className="dropdown__list">
+								{newdata.equipments.map((equipment, index) => (
+									<li className="dropdown__list__item" key={index}>{equipment}</li>
+								))}
+							</ul>
+						</>
+					}
+				/>
+			</div>
+			<Footer />
+		</>
+	);
 }
