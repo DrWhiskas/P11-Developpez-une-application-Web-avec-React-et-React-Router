@@ -20,7 +20,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-    /* or 34px */
     display: flex;
     align-items: center;
     color: white;
@@ -29,6 +28,9 @@
 .dropdown__btn__arrow{
     height: 13px;
     margin: 0 14px 0px 73px;
+}
+.dropdown__btn__arrow:hover{
+    cursor: pointer;
 }
 .dropdown__content{
     height: auto;

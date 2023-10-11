@@ -6,7 +6,8 @@ import '../style/dropdown.css';
 export default function Dropdown({ titles, descriptions }) {
 	const [open, setOpen] = useState(false);
 
-	const toggleDropdown = () => {
+	//Gere l'etat des Dropdown
+	function toggleDropdown() {
 		setOpen(!open);
 	};
 

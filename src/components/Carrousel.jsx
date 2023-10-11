@@ -7,17 +7,18 @@ import nextButton from '../assets/ArrowRight.png';
 import '../style/carrousel.css';
 
 export default function Carrousel() {
-	const { id } = useParams();
-	const logement = data.find((logement) => logement.id == id);
+	const { id } = useParams(); //Extraire l'id de l'URL
+	const logement = data.find((logement) => logement.id == id); //Cherche l'id correspoondant 
 
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentIndex, setCurrentIndex] = useState(0); //Gère l'etat currentindex
 
+	/* GESTION DES SLIDES */
 	function previousSlide() {
 		const isFirstSlide = currentIndex == 0;
 		const nexIndex = isFirstSlide
 			? logement.pictures.length - 1
 			: currentIndex - 1;
-		setCurrentIndex(nexIndex);
+		setCurrentIndex(nexIndex); //Met à jour currentIndex
 	}
 
 	function nextSlide() {
@@ -25,6 +26,7 @@ export default function Carrousel() {
 		const nexIndex = currentIndex == isLastSlide ? 0 : currentIndex + 1;
 		setCurrentIndex(nexIndex);
 	}
+
 	return (
 		<div className="carousel">
 			<div className="carousel__button__content">

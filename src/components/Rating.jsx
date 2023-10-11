@@ -9,6 +9,7 @@ export default function Rating() {
 	const { id } = useParams();
 	const rate = data.find((rating) => rating.id === id);
 
+	// Gestion des etoiles
 	function setStars() {
 		const stars = [];
 		const totalStars = 5;

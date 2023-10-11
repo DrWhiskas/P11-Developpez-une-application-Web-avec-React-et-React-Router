@@ -30,6 +30,9 @@
     width: 96px;
     height: 119px;
 }
+.carousel__button__arrow:hover{
+    cursor: pointer;
+}
 .carousel__button__content{
     display: flex;
     align-items: center;
