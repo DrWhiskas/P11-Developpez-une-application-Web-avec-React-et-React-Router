@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Localisation from '../components/Localisation';
 import BannerBackground from '../assets/BannerBackground.png';
-import body from '../style/style.css';
+import  '../style/style.css';
 
 export default function Home() {
 	return (

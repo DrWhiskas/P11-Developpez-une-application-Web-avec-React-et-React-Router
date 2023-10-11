@@ -4,15 +4,10 @@ import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown';
 import Informations from '../components/Informations';
 import Footer from '../components/Footer';
-import Rating from '../components/Rating';
-import Tag from '../components/Tag';
 import Error from './Error';
 import { useParams } from 'react-router-dom';
-
 import data from '../data/data.json';
-
-import ratingTagStyle from '../style/page/rating-tag.css';
-import logementStyle from '../style/logements.css';
+import '../style/logements.css';
 
 export default function Logements() {
 	const { id } = useParams();

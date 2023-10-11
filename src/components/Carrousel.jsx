@@ -24,7 +24,6 @@ export default function Carrousel() {
 		const isLastSlide = logement.pictures.length - 1;
 		const nexIndex = currentIndex == isLastSlide ? 0 : currentIndex + 1;
 		setCurrentIndex(nexIndex);
-		console.log(nexIndex);
 	}
 	return (
 		<div className="carousel">
