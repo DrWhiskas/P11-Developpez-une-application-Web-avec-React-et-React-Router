@@ -35,3 +35,9 @@
     align-items: center;
 
 }
+@media screen and (max-width: 767px) {
+    .carousel{
+        height: 380px;
+    }
+}
+

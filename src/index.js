@@ -5,7 +5,7 @@ import Logements from './pages/Logements';
 import About from './pages/About'
 import Error from './pages/Error';
 import reportWebVitals from './reportWebVitals';
-import style from "../src/index.css"
+import  "../src/index.css"
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'

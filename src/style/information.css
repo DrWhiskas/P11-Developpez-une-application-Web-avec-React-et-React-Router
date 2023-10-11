@@ -5,7 +5,7 @@
     align-items: center;
 }
 .informations__localisation__title{
-    font-size: xxx-large;
+    font-size: 36px;
     margin: 1% 0;
     color: #FF6060;
 }
@@ -21,21 +21,25 @@
 .informations__host__content{
     display: flex;
     align-items: center;
-    gap: 8%;
+    gap: 5px;
 }
 .informations__host__content__name{
     color:#FF6060; 
+    font-size: 18px;
+    width: 35%;
 }
 .informations__host__content__picture{
     border-radius: 100%;
+    width: 90px;
+    height: 90px;
 }
 
 @media screen and (max-width: 767px) {
     .informations{
         display: flex;
         flex-direction: column;
-        margin-inline-end: auto;
-
+        align-items: initial;
+        overflow: hidden;
     }
     .informations__localisation__title{
         font-size: 18px;
@@ -43,17 +47,25 @@
     .informations__host{
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+    .informations__host__content{
+        position: relative;
+        left: 69px;
+        gap: 5px;
     }
     .informations__host__content__picture{
-        width: 50%;
+        width: 30%;
+        height: 30%;
     }
     .informations__host__content__name{
         font-size: 12px;
+        width: 22%;
     }
     .informations__localisation{
         display: flex;
         flex-direction: column;
         position: relative;
-        left: -14%;
     }
 }

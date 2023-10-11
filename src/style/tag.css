@@ -14,8 +14,11 @@
     border-radius: 13px;
     padding: 0 20px;
     margin-right: 20px;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
- 
+ .tags__item{
+    font-size: 10px;
+ }
 }
