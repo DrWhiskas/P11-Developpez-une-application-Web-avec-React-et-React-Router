@@ -16,7 +16,6 @@
     padding: 4%;
 }
 .localisation__card{
-    color: red;
     height: 400px;
     width: 400px;
     margin: 1%;
@@ -31,7 +30,6 @@
     width: 155px;
 }
 .localisation__card__cover{
-    color: red;
     object-fit: cover;
     height: 100%;
     width: 100%;

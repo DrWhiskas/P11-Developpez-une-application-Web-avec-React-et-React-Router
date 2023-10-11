@@ -16,10 +16,16 @@
 .informations__host{
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
-.informations__host__name{
+.informations__host__content{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+.informations__host__content__name{
     color:#FF6060; 
 }
-.informations__host__picture{
+.informations__host__content__picture{
     border-radius: 100%;
 }
