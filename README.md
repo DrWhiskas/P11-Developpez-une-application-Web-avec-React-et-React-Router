@@ -1,4 +1,4 @@
-# Kasa Bank Projet 11 Openclassrooms
+# Kasa Projet 11 Openclassrooms
 
 ## Prerequisites
 
